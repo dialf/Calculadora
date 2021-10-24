@@ -1,0 +1,144 @@
+:root {
+    --color-tecla: crimson;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    background-color: black;
+    color: rgb(211, 207, 207);
+    font-family: monospace;
+}
+h1 {
+    border:gray 2px solid;
+    border-radius: 6px;
+    width: 115px;
+    margin-left: 38px;
+    margin-top: 20px;
+
+}
+.pantalla  {
+    /*para limitar caracteres hacerlo en js*/ 
+    background-color: black;
+    border: solid rgb(80, 80, 80) 2px; 
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    overflow: hidden; /*oculta los numeros colocasdos*/
+    white-space: inherit;
+    display: flex;
+    justify-content: flex-end;
+    width: 85px;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+.teclas { /*agregar :hover a esto para bug pto*/
+    justify-content: center;
+    padding:5px ;
+    display: grid;
+   /* grid-template-columns: 20px 20px 20px 20px; 
+    grid-template-rows: 20px 20px 20px 20px ;*/
+    background-color: black;
+    border: 2px solid rgb(80, 80, 80);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    width: 85px;
+    height: 90px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+
+}
+.div-teclas{
+    background-color: black;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px; 
+    grid-template-rows: 20px 20px 20px 20px ;
+    width: 80px;
+    height: 80px;
+}
+button:hover{
+    background-color: rgb(131, 125, 125);
+}
+.zero, .one, .two, .tre, .four, .five, .six, .seven, .eight, 
+.nine, .igual, .mas, .menos, .por, .divi, .c {
+    display: grid;
+    width: 15px;
+    height: 16px;
+    background-color: black;
+    justify-content: center;
+    margin-left: 2px; /*hay alguna propiedad o algo a si para hacer esto*/
+}
+ .nine {
+     grid-column: 3;
+     grid-row: 1;
+ }
+ .eight {
+     grid-column: 2;
+     grid-row: 1;
+ }
+ .seven {
+     grid-column: 1;
+     grid-row: 1;
+ }
+ .six {
+    grid-column: 3;
+    grid-row: 2;
+ }
+ .five {
+    grid-column: 2;
+    grid-row: 2;
+ }
+ .four {
+    grid-column: 1;
+    grid-row: 2;
+ }
+ .tre {
+    grid-column: 3;
+    grid-row: 3;
+ }
+ .two {
+    grid-column: 2;
+    grid-row: 3;
+ }
+ .one {
+    grid-column:1;
+    grid-row: 3;
+ }
+ .zero {
+    grid-column: 1;
+    grid-row: 4;
+ }
+ .c {
+    grid-column: 4;
+    grid-row: 1;
+    color: var(--color-tecla);
+ }
+ .mas {
+    grid-column: 4;
+    grid-row: 2;
+    color: var(--color-tecla);
+ }
+ .menos {
+    grid-column:4;
+    grid-row: 3;
+    color: var(--color-tecla);
+ }
+ .igual {
+    grid-column: 4;
+    grid-row: 4;
+    color: green;
+ }
+ .por {
+     grid-column: 3;
+     grid-row: 4;
+     color: var(--color-tecla);
+ }
+ .divi {
+     grid-column: 2;
+     grid-row: 4;
+     color: var(--color-tecla);
+ }
